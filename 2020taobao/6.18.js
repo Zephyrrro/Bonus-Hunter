@@ -1,6 +1,6 @@
 auto.waitFor();
 var appName = "手机淘宝";
-
+// sleep(3000);
 var deviceWidth = device.width;
 var deviceHeight = device.height;
 setScreenMetrics(deviceWidth, deviceHeight);
@@ -10,9 +10,9 @@ sleep(3000);
 
 function clickGoTrain() {
   var entryPosition = className("android.widget.FrameLayout")
-    .indexInParent(6)
+    .indexInParent(10)
     .depth(12)
-    .drawingOrder(7)
+    .drawingOrder(11)
     .findOnce()
     .bounds();
   try {
